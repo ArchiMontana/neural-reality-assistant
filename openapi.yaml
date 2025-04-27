@@ -1,0 +1,47 @@
+openapi: 3.1.0
+info:
+  title: Neural Reality Assistant API
+  version: '1.0.0'
+servers:
+  - url: https://example.com
+paths:
+  /generate-post:
+    post:
+      operationId: generatePost
+      summary: Создать пост с заголовком и промптом
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                topic:
+                  type: string
+                  description: Тема поста
+                tone:
+                  type: string
+                  description: Тональность поста
+              required:
+                - topic
+                - tone
+      responses:
+        '200':
+          description: Успешная генерация поста
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  post_text:
+                    type: string
+                    description: Текст поста
+                  title:
+                    type: string
+                    description: Заголовок поста
+                  image_prompt:
+                    type: string
+                    description: Промпт для изображения
+                  discussion_question:
+                    type: string
+                    description: Вопрос для обсуждения
