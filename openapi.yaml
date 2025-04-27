@@ -3,7 +3,8 @@ info:
   title: Neural Reality Assistant API
   version: '1.0.0'
 servers:
-  - url: https://example.com
+  servers:
+  - url: https://neural-reality-assistant.ai
 paths:
   /generate-post:
     post:
