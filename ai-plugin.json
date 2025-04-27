@@ -1,0 +1,14 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Neural Reality Assistant",
+  "name_for_model": "neuralRealityAssistant",
+  "description_for_human": "Создаёт посты про ИИ, нейросети, квантовые технологии и новые гаджеты.",
+  "description_for_model": "Генерирует посты с заголовками и промптами для тематических изображений по заданной теме и тону.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://raw.githubusercontent.com/ArchiMontana/neural-reality-assistant/main/openapi.yaml"
+  }
+}
