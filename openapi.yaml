@@ -3,7 +3,7 @@ info:
   title: Neural Reality Assistant API
   version: '1.0.0'
 servers:
-  - url: https://example.com
+  - url: https://raw.githubusercontent.com/ArchiMontana/neural-reality-assistant/main
 paths:
   /generate-post:
     post:
